@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
 .mainWrapper {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: #262626;
   color: white !important;
 }
 
 .mainWrapper .bg-dark {
-  background-color: rgba(0, 0, 0, 0.85) !important;
+  background-color: #262626 !important;
 }
 
 .mainWrapper .bg-light {

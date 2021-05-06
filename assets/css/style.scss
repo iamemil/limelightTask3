@@ -1,6 +1,7 @@
 $bgcolor: rgba(0, 0, 0, 0.85);
 //$bgcolor:#272838;
 //$bgcolor:#2E2D4D;
+$bgcolor:#262626;
 $secondaryColor: #1d1f21;
 $focusColor: #00ff88;
 $textColor:white;
@@ -9,6 +10,7 @@ $accentColor:#E63462;
 .mainWrapper{
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     //font-family: 'Montserrat', sans-serif;
+    background-color: $bgcolor;
     color: $textColor !important;
     .bg-dark{
         background-color: $bgcolor !important;
