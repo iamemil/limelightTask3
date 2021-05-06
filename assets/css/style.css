@@ -1,4 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
 .mainWrapper {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: white !important;
+}
+
+.mainWrapper .bg-dark {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.mainWrapper .bg-light {
+  background-color: #1d1f21 !important;
+}
+
+.mainWrapper .btn-primary {
+  background-color: #E63462;
+  border-color: #E63462;
+}
+
+.mainWrapper nav .navbar-brand {
+  color: white;
+  -webkit-transition: 0.4s color ease-in-out;
+  transition: 0.4s color ease-in-out;
+}
+
+.mainWrapper nav .navbar-brand:hover {
+  color: #00ff88;
+  -webkit-transition: 0.4s color ease-in-out;
+  transition: 0.4s color ease-in-out;
+}
+
+.mainWrapper nav a.nav-link {
+  -webkit-transition: 0.3s color ease-in-out;
+  transition: 0.3s color ease-in-out;
+}
+
+.mainWrapper nav a.nav-link:hover {
+  color: #00ff88 !important;
+  -webkit-transition: 0.3s color ease-in-out;
+  transition: 0.3s color ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

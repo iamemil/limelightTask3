@@ -1,3 +1,41 @@
+$bgcolor: rgba(0, 0, 0, 0.85);
+//$bgcolor:#272838;
+//$bgcolor:#2E2D4D;
+$secondaryColor: #1d1f21;
+$focusColor: #00ff88;
+$textColor:white;
+$accentColor:#E63462;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
 .mainWrapper{
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    //font-family: 'Montserrat', sans-serif;
+    color: $textColor !important;
+    .bg-dark{
+        background-color: $bgcolor !important;
+    }
+    .bg-light{
+        background-color: $secondaryColor !important;
+    }
+    .btn-primary{
+        background-color: $accentColor;
+        border-color: $accentColor;
+    }
+    nav{
+        .navbar-brand{
+            color: $textColor;
+            transition: 0.4s color ease-in-out;
+            &:hover{
+                color: $focusColor;
+            transition: 0.4s color ease-in-out;
+            }
+        }
+        a.nav-link{
+            transition: 0.3s color ease-in-out;
+            &:hover{
+                color: $focusColor !important;
+                transition: 0.3s color ease-in-out;
+            }
+        }
+        
+    }
 }
