@@ -30,6 +30,14 @@ $accentColor:#E63462;
         background-color: $accentColor;
         border-color: $accentColor;
     }
+    .badge-success{
+        background-color: $focusColor;
+        border-color: $focusColor;
+        color: black;
+        &:hover{
+            color: black;
+        }
+    }
     nav{
         .navbar-brand{
             color: $textColor;
@@ -77,4 +85,5 @@ $accentColor:#E63462;
     }
     @import 'sections/services';
     @import 'sections/portfolio';
+    @import 'sections/education';
 }
