@@ -61,7 +61,7 @@ $accentColor:#E63462;
             position: absolute;
             top: -20px;
             content: '*';
-            color: $accentColor;
+            color: $focusColor;
         }
     }
     @import 'sections/services';

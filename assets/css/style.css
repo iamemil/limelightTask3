@@ -59,7 +59,7 @@
   position: absolute;
   top: -20px;
   content: '*';
-  color: #E63462;
+  color: #00ff88;
 }
 
 .mainWrapper #Services .services-card {
@@ -80,7 +80,7 @@
 }
 
 .mainWrapper #Services .services-card:hover .tech-stack {
-  color: #00ff88;
+  color: #E63462;
 }
 
 .mainWrapper #Services .services-card .card-title {
