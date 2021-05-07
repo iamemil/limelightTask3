@@ -153,12 +153,12 @@
   border-top-right-radius: 1rem;
 }
 
-.mainWrapper #Education {
+.mainWrapper #WorkExperience, .mainWrapper #Education {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.mainWrapper #Education ul.timeline {
+.mainWrapper #WorkExperience ul.timeline, .mainWrapper #Education ul.timeline {
   list-style-type: none;
   position: relative;
   border-radius: 50px;
@@ -168,7 +168,7 @@
   transition: 0.5s all ease-in-out;
 }
 
-.mainWrapper #Education ul.timeline:hover {
+.mainWrapper #WorkExperience ul.timeline:hover, .mainWrapper #Education ul.timeline:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: 0.5s all ease-in-out;
@@ -177,7 +177,7 @@
           box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.4);
 }
 
-.mainWrapper #Education ul.timeline:before {
+.mainWrapper #WorkExperience ul.timeline:before, .mainWrapper #Education ul.timeline:before {
   content: ' ';
   background: #6c757d;
   display: inline-block;
@@ -189,12 +189,12 @@
   z-index: 400;
 }
 
-.mainWrapper #Education ul.timeline > li {
+.mainWrapper #WorkExperience ul.timeline > li, .mainWrapper #Education ul.timeline > li {
   margin: 20px 0;
   padding-left: 20px;
 }
 
-.mainWrapper #Education ul.timeline > li:before {
+.mainWrapper #WorkExperience ul.timeline > li:before, .mainWrapper #Education ul.timeline > li:before {
   content: ' ';
   background: #1d1f21;
   display: inline-block;
@@ -205,5 +205,62 @@
   width: 20px;
   height: 20px;
   z-index: 400;
+}
+
+.mainWrapper #Contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mainWrapper #Contact .contact-card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.mainWrapper #Contact .contact-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  -webkit-box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.4);
+}
+
+.mainWrapper #Contact .contact-card:hover .tech-stack {
+  color: #E63462;
+}
+
+.mainWrapper #Contact .contact-card .card-title {
+  font-family: 'Lato', sans-serif;
+}
+
+.mainWrapper #Contact .contact-card .card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.mainWrapper #Contact .contact-card a.badge {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  -webkit-transition: 0.5s background-color ease-in-out;
+  transition: 0.5s background-color ease-in-out;
+}
+
+.mainWrapper #Contact .contact-card a.badge:hover {
+  -webkit-transition: 0.5s background-color ease-in-out;
+  transition: 0.5s background-color ease-in-out;
+  background-color: #E63462 !important;
+}
+
+.mainWrapper #Contact .contact-card a.badge i {
+  position: absolute;
+  top: 31%;
+  left: 31%;
 }
 /*# sourceMappingURL=style.css.map */
