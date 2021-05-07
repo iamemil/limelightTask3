@@ -8,6 +8,7 @@ $textColor:white;
 $accentColor:#E63462;
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+
 .mainWrapper{
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     //font-family: 'Montserrat', sans-serif;
@@ -63,29 +64,5 @@ $accentColor:#E63462;
             color: $accentColor;
         }
     }
-    #Services{
-        .services-card{
-            background-color: $secondaryColor;
-            border: 1px solid rgba(0,0,0,.125);
-            border-radius: 0.5rem;
-            transition: 0.5s all ease-in-out;
-            &:hover{
-                transform: scale(1.05);
-                transition: 0.5s all ease-in-out;
-                box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.4);
-                .tech-stack{
-                    color: $focusColor;
-                }
-            }
-            //margin: 20px 0px 20px 0px;
-            .card-title{
-                font-family: 'Lato', sans-serif;
-            }
-            .card-img-top{
-                border-top-left-radius: 0.5rem;
-                border-top-right-radius: 0.5rem;
-            }
-        }
-    }
-    
+    @import 'sections/services';
 }
