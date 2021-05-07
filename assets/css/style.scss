@@ -20,7 +20,13 @@ $accentColor:#E63462;
     .bg-light{
         background-color: $secondaryColor !important;
     }
-    .btn-primary{
+    .badge{
+        text-decoration: none;
+        &:hover{
+            color: $textColor;
+        }
+    }
+    .btn-primary,.badge-primary{
         background-color: $accentColor;
         border-color: $accentColor;
     }
@@ -56,13 +62,19 @@ $accentColor:#E63462;
 
     .section-title{
         position: relative;
-        margin-top: 40px;
+        //margin-top: 40px;
         &::after{
             position: absolute;
-            top: -20px;
+            top: -15px;
             content: '*';
             color: $focusColor;
         }
     }
+    .section-divider{
+        width: 100%;
+        height: 50px;
+        background-color: $bgcolor;
+    }
     @import 'sections/services';
+    @import 'sections/portfolio';
 }

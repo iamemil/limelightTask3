@@ -13,7 +13,15 @@
   background-color: #1d1f21 !important;
 }
 
-.mainWrapper .btn-primary {
+.mainWrapper .badge {
+  text-decoration: none;
+}
+
+.mainWrapper .badge:hover {
+  color: white;
+}
+
+.mainWrapper .btn-primary, .mainWrapper .badge-primary {
   background-color: #E63462;
   border-color: #E63462;
 }
@@ -52,20 +60,30 @@
 
 .mainWrapper .section-title {
   position: relative;
-  margin-top: 40px;
 }
 
 .mainWrapper .section-title::after {
   position: absolute;
-  top: -20px;
+  top: -15px;
   content: '*';
   color: #00ff88;
+}
+
+.mainWrapper .section-divider {
+  width: 100%;
+  height: 50px;
+  background-color: #262626;
+}
+
+.mainWrapper #Services {
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .mainWrapper #Services .services-card {
   background-color: #1d1f21;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
@@ -88,7 +106,43 @@
 }
 
 .mainWrapper #Services .services-card .card-img-top {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.mainWrapper #Portfolio {
+  background-color: #1d1f21;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mainWrapper #Portfolio .portfolio-card {
+  background-color: #262626;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.mainWrapper #Portfolio .portfolio-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  -webkit-box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.4);
+}
+
+.mainWrapper #Portfolio .portfolio-card:hover .tech-stack {
+  color: #E63462;
+}
+
+.mainWrapper #Portfolio .portfolio-card .card-title {
+  font-family: 'Lato', sans-serif;
+}
+
+.mainWrapper #Portfolio .portfolio-card .card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
