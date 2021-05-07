@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 .mainWrapper {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   background-color: #262626;
@@ -20,8 +20,13 @@
 
 .mainWrapper nav .navbar-brand {
   color: white;
+  display: inline-block;
   -webkit-transition: 0.4s color ease-in-out;
   transition: 0.4s color ease-in-out;
+}
+
+.mainWrapper nav .navbar-brand b {
+  color: white;
 }
 
 .mainWrapper nav .navbar-brand:hover {
@@ -30,14 +35,60 @@
   transition: 0.4s color ease-in-out;
 }
 
-.mainWrapper nav a.nav-link {
+.mainWrapper nav .navbar-brand:hover b {
+  color: white;
+}
+
+.mainWrapper nav .nav-item:hover a.nav-link {
   -webkit-transition: 0.3s color ease-in-out;
   transition: 0.3s color ease-in-out;
 }
 
-.mainWrapper nav a.nav-link:hover {
+.mainWrapper nav .nav-item:hover a.nav-link:hover {
   color: #00ff88 !important;
   -webkit-transition: 0.3s color ease-in-out;
   transition: 0.3s color ease-in-out;
+}
+
+.mainWrapper .section-title {
+  position: relative;
+  margin-top: 40px;
+}
+
+.mainWrapper .section-title::after {
+  position: absolute;
+  top: -20px;
+  content: '*';
+  color: #E63462;
+}
+
+.mainWrapper #Services .services-card {
+  background-color: #1d1f21;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.mainWrapper #Services .services-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  -webkit-box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.4);
+}
+
+.mainWrapper #Services .services-card:hover .tech-stack {
+  color: #00ff88;
+}
+
+.mainWrapper #Services .services-card .card-title {
+  font-family: 'Lato', sans-serif;
+}
+
+.mainWrapper #Services .services-card .card-img-top {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
